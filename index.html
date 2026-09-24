@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SocialBox Termux — a security education project for authorized testing and defensive learning.">
+  <title>SocialBox Termux · Security education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SocialBox Termux home"><span class="brand-mark">SB</span><span>SocialBox<span class="muted">/</span>Termux</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#safety">Safety</a>
+      <a href="#resources">Resources</a>
+      <a class="nav-button" href="https://github.com/Chillman81/SocialBox-Termux" target="_blank" rel="noreferrer">View repository ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrapper">
+      <div class="eyebrow"><span class="status-dot"></span> Open-source security education</div>
+      <h1>Learn to defend<br><em>social accounts.</em></h1>
+      <p class="hero-copy">A safer, clearer home for SocialBox Termux. Explore the project’s history, understand the risks of credential attacks, and build better defenses in environments you own.</p>
+      <div class="actions"><a class="button primary" href="#about">Explore the project <span>↓</span></a><a class="button secondary" href="https://github.com/Chillman81/SocialBox-Termux/blob/master/README.md" target="_blank" rel="noreferrer">Read the README ↗</a></div>
+      <div class="terminal-card" aria-label="Project status">
+        <div class="terminal-top"><span></span><span></span><span></span><code>socialbox://overview</code></div>
+        <div class="terminal-body"><p><span class="prompt">$</span> project --status</p><p class="success">● documentation available</p><p class="warning">● legacy attack tooling detected</p><p class="muted-line">→ use only with explicit authorization</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrapper">
+      <div class="section-label">01 / The project</div>
+      <div class="section-grid"><div><h2>From terminal utility<br>to learning resource.</h2></div><div><p>SocialBox Termux is a historical shell-based project designed for Android’s Termux environment. Its original scripts target social platforms and include credential-guessing workflows.</p><p>This website does <strong>not</strong> run those scripts, collect credentials, or provide an attack interface. Instead, it gives learners a safe overview and points to defensive practice.</p></div></div>
+      <div class="stats"><div><strong>06</strong><span>legacy modules</span></div><div><strong>100%</strong><span>client-side website</span></div><div><strong>0</strong><span>credentials collected</span></div></div>
+    </section>
+
+    <section id="safety" class="section safety-section"><div class="wrapper"><div class="section-label">02 / Safety first</div><div class="safety-grid"><div><h2>Authorization is<br><em>not optional.</em></h2></div><div class="notice"><div class="notice-icon">!</div><div><h3>Use responsibly</h3><p>Attempting to access an account without the owner’s explicit, informed permission is illegal and harmful. Do not test real accounts or services. Use a local lab, intentionally vulnerable application, or a written engagement scope.</p><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noreferrer">Study OWASP guidance ↗</a></div></div></div></div></section>
+
+    <section id="resources" class="section wrapper"><div class="section-label">03 / Build defensive skills</div><h2>Better places to start.</h2><div class="resource-grid"><a class="resource" href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noreferrer"><span class="resource-number">01</span><h3>OWASP Top 10</h3><p>Understand common web application risks and mitigations.</p><span class="arrow">↗</span></a><a class="resource" href="https://portswigger.net/web-security" target="_blank" rel="noreferrer"><span class="resource-number">02</span><h3>Web Security Academy</h3><p>Practice in free, intentionally vulnerable labs.</p><span class="arrow">↗</span></a><a class="resource" href="https://github.com/Chillman81/SocialBox-Termux" target="_blank" rel="noreferrer"><span class="resource-number">03</span><h3>Source repository</h3><p>Review the original code and project history on GitHub.</p><span class="arrow">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer wrapper"><span>SocialBox / Termux</span><span>Made for responsible learning · <a href="https://github.com/Chillman81/SocialBox-Termux/blob/master/LICENSE.md" target="_blank" rel="noreferrer">License</a></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
